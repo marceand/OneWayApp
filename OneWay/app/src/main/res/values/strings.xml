@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">One Way</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lose">You lose level </string>
+    <string name="loseZero">Keep Trying</string>
+    <string name="win">You win level </string>
+    <string name="results_format">Total time: %1$.1f</string>
+    <string name="titleInstruction">How To Play</string>
+    <string name="instructionOne">1. Memorize path from red dot to blue dot.</string>
+    <string name="instructionTwo">2. Swipe(Up,Down,Left,Right) to draw your path.</string>
+    <string name="instructionThree">3. If both paths match, you move to the next level. Otherwise, you lose your current level.</string>
+    <string name="instructionFour">4. Forgot current path? press Start button again. </string>
+    <string name="dialogTitle">Congratulation!</string>
+    <string name="messageFinalLevel">You won all levels.You will play a new game.</string>
+    <string name="reset_game_new">Reset Game</string>
+</resources>

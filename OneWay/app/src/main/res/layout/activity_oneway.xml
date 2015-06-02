@@ -1,0 +1,166 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:paddingBottom="@dimen/activity_horizontal_margin"
+    tools:context=".MainActivity">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:useDefaultMargins="false"
+        android:id="@+id/gridLayout">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="fill_horizontal"
+            android:layout_gravity="fill_horizontal"
+            android:layout_column="1">
+
+            <TextView
+                android:id="@+id/spaceLeft"
+                android:text=""
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+
+            <TextView
+                android:id="@+id/score"
+                android:text="Goal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/levelMe"
+                android:text="Me"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/levelBest"
+                android:text="Best"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/spaceRight"
+                android:text=""
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_weight="1"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="fill_horizontal"
+            android:layout_gravity="fill_horizontal"
+            android:layout_column="1">
+            <TextView
+                android:id="@+id/spaceLeftThird"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=""
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/displayLevelGoal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="0"
+                android:gravity="center"
+                android:layout_marginTop="2px"
+                android:background="#EBEAE0"/>
+            <TextView
+                android:id="@+id/displayLevelMe"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="0"
+                android:layout_marginLeft="2px"
+                android:gravity="center"
+                android:layout_marginTop="2px"
+                android:background="#EBEAE0"/>
+
+            <TextView
+                android:id="@+id/displayLevelBest"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="0"
+                android:layout_marginLeft="2px"
+                android:gravity="center"
+                android:layout_marginTop="2px"
+                android:background="#EBEAE0"/>
+
+            <TextView
+                android:id="@+id/spaceRightThird"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=""
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+    </GridLayout>
+
+    <fragment
+        android:id="@+id/memoVectorGameFragment"
+        android:name="com.oneway.ione.oneway.GameFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        tools:layout="@layout/fragment_game" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:background="#EBEAE0"
+            android:onClick="startMyGame" />
+
+    </LinearLayout>
+
+</LinearLayout>
